@@ -29,9 +29,9 @@ TEMPLATE_DIR=os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'django-insecure-+xkf-c_%jdm26qb@$l5@yqz87+(0$ncnv+zp(p78r%xpk@l7^+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['studydais.herokuapp.com']
 
 
 # Application definition
@@ -135,6 +135,9 @@ USE_TZ = True
 
 
 # STATIC_URL='/static/'
+STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
@@ -149,22 +152,22 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #
-PWA_APP_NAME = 'Study Dais'
-PWA_APP_DESCRIPTION = "A complete Study Desk solution"
-PWA_APP_THEME_COLOR = '#0A0302'
-PWA_APP_BACKGROUND_COLOR = '#ffffff'
-PWA_APP_DISPLAY = 'standalone'
-PWA_APP_START_URL = '/'
-PWA_APP_ICONS = [
-    {
-        'src': '/static/images/studydais.png',
-        'sizes': '160x160'
-    }
-]
-PWA_APP_DIR = 'ltr'
-PWA_APP_LANG = 'en-US'
-
-PWA_SERVICE_WORKER_PATH=os.path.join(BASE_DIR,'static/js','serviceworker.js')
+# PWA_APP_NAME = 'Study Dais'
+# PWA_APP_DESCRIPTION = "A complete Study Desk solution"
+# PWA_APP_THEME_COLOR = '#0A0302'
+# PWA_APP_BACKGROUND_COLOR = '#ffffff'
+# PWA_APP_DISPLAY = 'standalone'
+# PWA_APP_START_URL = '/'
+# PWA_APP_ICONS = [
+#     {
+#         'src': '/static/images/studydais.png',
+#         'sizes': '160x160'
+#     }
+# ]
+# PWA_APP_DIR = 'ltr'
+# PWA_APP_LANG = 'en-US'
+#
+# PWA_SERVICE_WORKER_PATH=os.path.join(BASE_DIR,'static/js','serviceworker.js')
 
 
 
